@@ -21,7 +21,7 @@
     max-width: 25%;
   }
   .home-section .effect-1 {
-    bottom: 8%;
+    bottom: 13%;
   }
   .home-section .effect-2 {
     bottom: 10%;
@@ -51,18 +51,19 @@
         -ms-flex-order: 2;
             order: 2;
     text-align: center;
+    margin-top: 0px;
   }
   .home-section .full-screen {
     padding: 100px 0;
   }
   .home-section .home-img .img-box {
-    margin-bottom: 40px;
-    max-width: 350px;
+    margin-bottom: 20px;
+    max-width: 400px;
   }
   .home-section .effect-1 {
-    width: 150px;
-    height: 150px;
-    border-width: 20px;
+    width: 100px;
+    height: 100px;
+    border-width: 15px;
   }
   .home-section .effect-2 {
     width: 100px;
@@ -136,7 +137,8 @@
 
 @media (max-width: 574px) {
   .home-section .home-img .img-box {
-    max-width: 260px;
+    max-width: 300px;
+    margin-bottom: 0px;
   }
   .home-section .home-text h2 {
     font-size: 40px;

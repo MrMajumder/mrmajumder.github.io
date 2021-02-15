@@ -22,7 +22,7 @@
     }
     .home-section {
         .effect-1 {
-            bottom: 8%;
+            bottom: 13%;
         }
         .effect-2 {
             bottom: 10%;
@@ -50,20 +50,21 @@
         .home-text {
             order: 2;
             text-align: center;
+            margin-top: 0px;
         }
         .full-screen {
             padding: 100px 0;
         }
         .home-img {
             .img-box {
-                margin-bottom: 40px;
-                max-width: 350px;
+                margin-bottom: 20px;
+                max-width: 400px;
             }
         }
         .effect-1 {
-            width: 150px;
-            height: 150px;
-            border-width: 20px;
+            width: 100px;
+            height: 100px;
+            border-width: 15px;
         }
         .effect-2 {
             width: 100px;
@@ -147,7 +148,8 @@
     .home-section {
         .home-img {
             .img-box {
-                max-width: 260px;
+                max-width: 300px;
+                margin-bottom: 0px;
             }
         }
         .home-text {
