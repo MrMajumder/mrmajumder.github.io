@@ -1,10 +1,10 @@
 .style-switcher {
     position: fixed;
-    right: 0;
+    right: 0px;
     top: 77px;
     padding: 15px;
     width: 200px;
-    z-index: 101;
+    z-index: 200;
     border-radius: 5px;
     background-color: var(--bg-black-50) ;
     transition: all 0.3s ease;
@@ -63,10 +63,10 @@
         }
     }
     .color-1 {
-        background-color: #2eb1ed;
+        background-color: #ec9412;
     }
     .color-2 {
-        background-color: #ec9412;
+        background-color: #2eb1ed;
     }
     .color-3 {
         background-color: #1fc586;

@@ -3,6 +3,35 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .about-section {
+        .about-info .button-group {
+            text-align: center;
+        }
+        .experience {
+            .contact-item {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+        .skills {
+            .contact-item {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+    .home-section {
+        .effect-1 {
+            bottom: 8%;
+        }
+        .effect-2 {
+            bottom: 10%;
+        }
+        .effect-3 {
+            top: -30%;
+            left: 20%;
+        }
+    }
 }
 
 @media(max-width: 767px) {
@@ -57,8 +86,21 @@
             padding-bottom: 30px;
         }
         .about-info .button-group {
+            text-align: center;
             display: flex;
             padding: 0 10%;
+        }
+        .experience {
+            .contact-item {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .skills {
+            .contact-item {
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+            }
         }
         .timeline {
             &:before {

@@ -1,10 +1,10 @@
 .style-switcher {
   position: fixed;
-  right: 0;
+  right: 0px;
   top: 77px;
   padding: 15px;
   width: 200px;
-  z-index: 101;
+  z-index: 200;
   border-radius: 5px;
   background-color: var(--bg-black-50);
   -webkit-transition: all 0.3s ease;
@@ -79,11 +79,11 @@
 }
 
 .style-switcher .color-1 {
-  background-color: #fb839e;
+  background-color: #ec9412;
 }
 
 .style-switcher .color-2 {
-  background-color: #ec9412;
+  background-color: #2eb1ed;
 }
 
 .style-switcher .color-3 {
@@ -91,7 +91,7 @@
 }
 
 .style-switcher .color-4 {
-  background-color: #2eb1ed;
+  background-color: #fb839e;
 }
 
 .style-switcher .color-5 {
