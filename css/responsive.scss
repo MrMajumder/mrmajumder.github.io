@@ -8,15 +8,19 @@
             text-align: center;
         }
         .experience {
-            .contact-item {
-                flex: 0 0 50%;
-                max-width: 50%;
+            .row {
+                .contact-item {
+                    flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
             }
         }
         .skills {
-            .contact-item {
-                flex: 0 0 25%;
-                max-width: 25%;
+            .row {
+                .contact-item {
+                    flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
             }
         }
     }
@@ -98,9 +102,11 @@
             }
         }
         .skills {
-            .contact-item {
-                flex: 0 0 33.33%;
-                max-width: 33.33%;
+            .row {
+                .contact-item {
+                    flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
             }
         }
         .timeline {
