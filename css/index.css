@@ -309,7 +309,7 @@ img {
 
 .small-heading {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: var(--skin-color);
   text-transform: uppercase;
@@ -824,7 +824,7 @@ img {
   border-radius: 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--text-black-600);
   font-weight: 500;
   text-transform: capitalize;
@@ -856,7 +856,16 @@ img {
   padding: 0 0 40px;
 }
 
-.about-section .skills .contact-item {
+.about-section .skills .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section .skills .row .contact-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
@@ -864,30 +873,24 @@ img {
   padding: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.about-section .skills .contact-item .hover-in-shadow:after {
+.about-section .skills .row .contact-item .hover-in-shadow:after {
   border-radius: 5px;
 }
 
-.about-section .skills .contact-item-inner {
+.about-section .skills .row .contact-item-inner {
   padding: 30px 15px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
 }
 
-.about-section .skills .contact-item-inner:hover i {
+.about-section .skills .row .contact-item-inner:hover i {
   color: var(--skin-color);
 }
 
-.about-section .skills .contact-item-inner span {
+.about-section .skills .row .contact-item-inner span {
   display: block;
   font-size: 16px;
   font-weight: 600;
@@ -896,17 +899,27 @@ img {
   text-transform: capitalize;
 }
 
-.about-section .skills .contact-item-inner i {
+.about-section .skills .row .contact-item-inner i {
   font-size: 40px;
   color: var(--text-black-700);
 }
 
-.about-section .skills .contact-item-inner p {
+.about-section .skills .row .contact-item-inner p {
   font-size: 16px;
   color: var(--text-black-600);
   line-height: 26px;
   margin: 0;
   word-break: break-word;
+}
+
+.about-section .skills .row .contact-item-inner .link-item {
+  text-decoration: none;
+  color: var(--text-black-700);
+  font-weight: 700;
+}
+
+.about-section .skills .row .contact-item-inner .link-item:hover {
+  color: var(--skin-color);
 }
 
 .about-section .skills .skill-item {
@@ -1121,32 +1134,41 @@ img {
   color: var(--skin-color);
 }
 
-.about-section .experience .contact-item {
+.about-section .experience .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section .experience .row .contact-item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  max-width: 25%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%;
   padding: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.about-section .experience .contact-item .hover-in-shadow:after {
+.about-section .experience .row .contact-item .hover-in-shadow:after {
   border-radius: 5px;
 }
 
-.about-section .experience .contact-item-inner {
+.about-section .experience .row .contact-item-inner {
   padding: 30px 15px;
   text-align: center;
   border-radius: 5px;
   width: 100%;
 }
 
-.about-section .experience .contact-item-inner:hover i {
+.about-section .experience .row .contact-item-inner:hover i {
   color: var(--skin-color);
 }
 
-.about-section .experience .contact-item-inner span {
+.about-section .experience .row .contact-item-inner span {
   display: block;
   font-size: 16px;
   font-weight: 600;
@@ -1155,12 +1177,12 @@ img {
   text-transform: capitalize;
 }
 
-.about-section .experience .contact-item-inner i {
+.about-section .experience .row .contact-item-inner i {
   font-size: 25px;
   color: var(--text-black-700);
 }
 
-.about-section .experience .contact-item-inner p {
+.about-section .experience .row .contact-item-inner p {
   font-size: 16px;
   color: var(--text-black-600);
   line-height: 26px;
@@ -1175,9 +1197,9 @@ img {
 
 .card-section .card-item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33%;
-          flex: 0 0 33.33%;
-  max-width: 33.33%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1230,6 +1252,7 @@ img {
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .card-section .card-item-inner h3 {
@@ -1245,6 +1268,16 @@ img {
   color: var(--text-black-600);
   margin: 0;
   line-height: 26px;
+}
+
+.card-section .card-item-inner p a {
+  text-decoration: none;
+  color: var(--text-black-600);
+  font-weight: 600;
+}
+
+.card-section .card-item-inner p a:hover {
+  color: var(--skin-color);
 }
 
 .card-section .card-item-inner .icon {
@@ -1326,6 +1359,15 @@ img {
   line-height: 26px;
   margin: 0;
   word-break: break-word;
+}
+
+.contact-section .contact-item-inner p a {
+  color: var(--text-black-700);
+  font-weight: 700;
+}
+
+.contact-section .contact-item-inner p a:hover {
+  color: var(--skin-color);
 }
 
 .contact-section .contact-form {
