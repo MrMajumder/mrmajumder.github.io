@@ -42,6 +42,10 @@ body.dark {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 * :not(i) {
@@ -162,8 +166,6 @@ img {
   border: 25px solid var(--skin-color);
   opacity: 0.5;
   bottom: 15%;
-  -webkit-animation: spin 40s linear infinite;
-          animation: spin 40s linear infinite;
 }
 
 .effect-2 {
@@ -178,8 +180,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation: topBounce 3s ease-in-out infinite;
-          animation: topBounce 3s ease-in-out infinite;
 }
 
 .effect-2 div {
@@ -807,6 +807,10 @@ img {
   padding: 0 20%;
 }
 
+.about-section .about-info .button-group a {
+  font-weight: 600;
+}
+
 .about-section .about-tabs {
   padding: 60px 15px 50px;
   -webkit-box-flex: 0;
@@ -1087,6 +1091,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  z-index: -1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1110,8 +1115,15 @@ img {
 .about-section .timeline .timeline-item-inner h4 {
   font-size: 16px;
   font-style: italic;
-  color: var(--text-black-600);
   margin: 0;
+}
+
+.about-section .timeline .timeline-item-inner h4 a {
+  color: var(--text-black-600);
+}
+
+.about-section .timeline .timeline-item-inner h4 a:hover {
+  color: var(--skin-color);
 }
 
 .about-section .timeline .timeline-item-inner p {
@@ -1258,7 +1270,7 @@ img {
 .card-section .card-item-inner h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-black-700);
+  color: var(--skin-color);
   margin: 0 0 10px;
   text-transform: capitalize;
 }

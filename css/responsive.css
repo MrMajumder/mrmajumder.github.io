@@ -13,12 +13,14 @@
         -ms-flex: 0 0 33.33%;
             flex: 0 0 33.33%;
     max-width: 33.33%;
+    padding: 5px;
   }
   .about-section .skills .row .contact-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33%;
             flex: 0 0 33.33%;
     max-width: 33.33%;
+    padding: 5px;
   }
   .home-section .effect-1 {
     bottom: 13%;
@@ -64,9 +66,13 @@
     width: 100px;
     height: 100px;
     border-width: 15px;
+    -webkit-animation: spin 40s linear infinite;
+            animation: spin 40s linear infinite;
   }
   .home-section .effect-2 {
     width: 100px;
+    -webkit-animation: topBounce 3s ease-in-out infinite;
+            animation: topBounce 3s ease-in-out infinite;
   }
   .home-section .effect-2 div {
     height: 20px;
@@ -79,6 +85,8 @@
     border: 30px solid var(--skin-color);
     left: 20%;
     top: -35%;
+    -webkit-animation: leftBounce 3s ease-in-out infinite;
+            animation: leftBounce 3s ease-in-out infinite;
   }
   .about-section .about-img {
     padding-bottom: 30px;
