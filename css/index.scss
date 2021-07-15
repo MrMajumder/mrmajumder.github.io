@@ -135,7 +135,7 @@ img {
 .effect-1 {
     width: 250px;
     height: 250px;
-    right: 5%;
+    right: 1%;
     border: 25px solid var(--skin-color);
     opacity: 0.5;
     bottom: 15%;
@@ -165,7 +165,7 @@ img {
     border-radius: 50%;
     left: 40%;
     top: -40%;
-    
+    animation: leftBounce 3s ease-in-out infinite;
 }
 .slow-spin {
     animation: fa-spin 6s infinite linear;

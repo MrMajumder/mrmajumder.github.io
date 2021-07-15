@@ -68,8 +68,8 @@
   });
 
   var effect1 = document.querySelector(".effect-1"),
-    effect2 = document.querySelector(".effect-2"),
-    effect3 = document.querySelector(".effect-3");
+    effect2 = document.querySelector(".effect-2");
+    //effect3 = document.querySelector(".effect-3");
   document.addEventListener("mousemove", (event) => {
     if (window.innerWidth > 767) {
       var valueX = (event.pageX * -1) / 50;
@@ -78,8 +78,8 @@
         "translate3d(" + valueX + "px," + valueY + "px, 0) rotate(20deg)";
       effect2.style.transform =
         "translate3d(" + valueX + "px," + valueY + "px, 0) rotate(0deg)";
-      effect3.style.transform =
-        "translate3d(" + valueX + "px," + valueY + "px, 0) rotate(20deg)";
+      //effect3.style.transform =
+      //  "translate3d(" + valueX + "px," + valueY + "px, 0) rotate(20deg)";
     }
   });
 
