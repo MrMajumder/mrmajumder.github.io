@@ -11,6 +11,18 @@ window.addEventListener("scroll", () => {
     }
 })
 
+//hide style switcher when escape key is pressed
+window.addEventListener("keydown", e => {
+    //console.log("key found is : " + e.code);
+    if(e.code == "Escape") { //if the event generates from pressing "Escape" key
+        //console.log("key found is : " + e.code);
+        //then close the open settings bar
+        if(document.querySelector(".style-switcher").classList.contains("open")) {
+            document.querySelector(".style-switcher").classList.remove("open");
+        }
+    }
+})
+
 //theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color) {

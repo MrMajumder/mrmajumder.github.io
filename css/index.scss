@@ -644,7 +644,8 @@ img {
             text-transform: capitalize;
 
             &:hover:not(.active) {
-                opacity: 0.6;
+                //opacity: 0.6;
+                color: var(--skin-color);
             }
             &.active {
                 color: var(--skin-color);
@@ -970,12 +971,47 @@ img {
     padding: 80px 0 80px;
     min-height: 100vh;
 
+    .filter-tabs {
+        padding: 10px 15px 50px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+
+        .f-tab-item {
+            display: inline-block;
+            margin: 0 5px 10px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-size: 20px;
+            color: var(--text-black-600);
+            font-weight: 500;
+            text-transform: capitalize;
+
+            &:hover:not(.active) {
+                //opacity: 0.6;
+                color: var(--skin-color);
+            }
+            &.active {
+                color: var(--skin-color);
+            }
+        }
+    }
+
     .card-item {
         flex: 0 0 50%;
         max-width: 50%;
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
+        &.active {
+            display: flex;
+            //animation: fadeInTop 0.5s ease;
+        }
+        &.hide {
+            display: none;
+        }
     }
     .card-item-inner {
         padding: 50px 15px;

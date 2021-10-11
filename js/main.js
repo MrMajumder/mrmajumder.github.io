@@ -20,6 +20,14 @@
       document.querySelector(".fade-out-effect").classList.remove("active");
     }, 300);
   }
+  //event listener for closing the nav menu when escape is pressed
+  document.addEventListener("keydown", (event) => {
+    //console.log("key found is : " + e.code);
+    if(event.code == "Escape") { //if the event generates from pressing "Escape" key
+        //then close the open settings bar
+        closeNavMenu();
+    }
+  })
   // attach and event handler to document
   document.addEventListener("click", (event) => {
     if (event.target.classList.contains("link-item")) {
@@ -171,3 +179,32 @@ window.addEventListener("load", () => {
     document.querySelector(".preloader").style.display = "none";
   }, 600);
 });
+
+//Projects section filtering
+(() => {
+  const filterItem = document.querySelector(".filter-tabs");
+  const projects = document.querySelectorAll(".card-item");
+
+  filterItem.onclick = (selectedItem) => {
+    if(selectedItem.target.classList.contains("f-tab-item")) {
+      filterItem.querySelector(".active").classList.remove("active", "outer-shadow");
+      selectedItem.target.classList.add("active", "outer-shadow");
+
+      let filtername = selectedItem.target.getAttribute("data-name"); //getting the filter name
+      projects.forEach(project => {
+        let projectFilter = project.getAttribute("data-name");
+        //console.log(projectFilter);
+        //if this project has the filter chosen
+        //or the filter chosen is "all"
+        if(filtername == projectFilter || filtername == "all") {
+          project.classList.add("active");
+          project.classList.remove("hide");
+        }
+        else {
+          project.classList.add("hide");
+          project.classList.remove("active");
+        }
+      });
+    }
+  }
+})();
