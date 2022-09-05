@@ -34,7 +34,7 @@
             bottom: 10%;
         }
         .effect-3 {
-            top: -30%;
+            top: -55%;
             left: 20%;
         }
     }
@@ -68,8 +68,9 @@
             }
         }
         .effect-1 {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
+            right: 0%;
             border-width: 15px;
             animation: spin 40s linear infinite;
         }
@@ -83,11 +84,11 @@
             }
         }
         .effect-3 {
-            height: 300px;
-            width: 300px;
-            border: 30px solid var(--skin-color);
-            left: 20%;
-            top: -35%;
+            height: 250px;
+            width: 250px;
+            border: 25px solid var(--skin-color);
+            left: 25%;
+            top: -30%;
             animation: leftBounce 3s ease-in-out infinite;
         }
     }

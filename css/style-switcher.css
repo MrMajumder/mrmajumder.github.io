@@ -7,17 +7,12 @@
   z-index: 200;
   border-radius: 5px;
   background-color: var(--bg-black-50);
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
-
 .style-switcher.open {
-  -webkit-transform: translateX(-15px);
-          transform: translateX(-15px);
+  transform: translateX(-15px);
 }
-
 .style-switcher .s-icon {
   position: absolute;
   height: 40px;
@@ -29,27 +24,21 @@
   right: 100%;
   margin-right: 15px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 50%;
 }
-
 .style-switcher .s-icon i {
   line-height: 40px;
 }
-
 .style-switcher .s-icon:after {
   border-radius: 50%;
 }
-
 .style-switcher .style-toggler {
   top: 0;
 }
-
 .style-switcher .day-night {
   top: 55px;
 }
-
 .style-switcher h4 {
   margin: 0 0 10px;
   color: var(--text-black-700);
@@ -57,19 +46,12 @@
   font-weight: 600;
   text-transform: capitalize;
 }
-
 .style-switcher .colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: var(--bg-black-50);
 }
-
 .style-switcher .colors span {
   display: inline-block;
   height: 30px;
@@ -77,24 +59,18 @@
   border-radius: 50%;
   cursor: pointer;
 }
-
 .style-switcher .color-1 {
   background-color: #ec9412;
 }
-
 .style-switcher .color-2 {
   background-color: #2eb1ed;
 }
-
 .style-switcher .color-3 {
   background-color: #1fc586;
 }
-
 .style-switcher .color-4 {
   background-color: #fb839e;
 }
-
 .style-switcher .color-5 {
   background-color: #cc3a3b;
-}
-/*# sourceMappingURL=style-switcher.css.map */
+}/*# sourceMappingURL=style-switcher.css.map */
